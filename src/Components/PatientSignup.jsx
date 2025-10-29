@@ -4,6 +4,7 @@ import {
   FaProcedures, FaSyringe, FaNotesMedical, FaUserMd
 } from "react-icons/fa";
 import "./PatientSignup.css";
+import { useEffect } from "react";
 
 function PatientSignup() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,15 @@ function PatientSignup() {
     setSubmitted(true);
   };
 
+    useEffect(() => {
+    document.body.classList.add("Signup-bg");
+    return () => {
+      document.body.classList.remove("Signup-bg");
+    };
+  }, []);
+
   return (
+    <div className="Signup-bg">
     <div className="signup-wrapper">
       <div className="signup-left">
         <div className="signup-title">HOSPITAL</div>
@@ -102,6 +111,7 @@ function PatientSignup() {
           <span className="circle-icon icon8"><FaProcedures size={28} /></span>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,4 +1,14 @@
-body {
+/* body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to right, #0aa1ae 50%, #f6f8fa 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+body.login-bg{
   min-height: 100vh;
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;

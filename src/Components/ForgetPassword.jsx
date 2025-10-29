@@ -4,6 +4,7 @@ import {
   FaProcedures, FaSyringe, FaNotesMedical, FaUserMd
 } from "react-icons/fa";
 import "./LoginPage.css"; // Reuse the same CSS
+import { useEffect } from "react";
 
 function ForgetPassword() {
   const [formData, setFormData] = useState({
@@ -39,8 +40,15 @@ function ForgetPassword() {
       setError("");
     }
   };
+      useEffect(() => {
+      document.body.classList.add("login-bg");
+      return () => {
+        document.body.classList.remove("login-bg");
+      };
+    }, []);
 
   return (
+    <div className="login-bg">
     <div className="signup-wrapper">
       <div className="signup-left">
         <div className="signup-title">Forgot Password</div>
@@ -102,6 +110,7 @@ function ForgetPassword() {
           <span className="circle-icon icon8"><FaProcedures size={28} /></span>
         </div>
       </div>
+    </div>
     </div>
   );
 }

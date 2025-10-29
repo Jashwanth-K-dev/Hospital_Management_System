@@ -1,0 +1,120 @@
+/* Reset and body setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Full width top header */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0aa1ae;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Header container */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 50px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.highlight {
+  color: #ff6666;
+}
+
+/* Right section (time, contact, button) */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Contact/time info */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon {
+  font-size: 20px;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.info-detail {
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+/* Button styling */
+.book-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #e53935;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .right-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+}
