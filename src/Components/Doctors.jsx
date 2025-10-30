@@ -3,6 +3,11 @@ import "./Doctors.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import ramesh from "../assets/ramesh.jpg";
+import anjali from "../assets/anjali.jpeg";
+import priya from "../assets/priya.jpeg";
+import sanjay from "../assets/sanjay.jpeg";
+import rajesh from "../assets/rajesh.jpeg";
 
 const Doctors = () => {
   const [filter, setFilter] = useState("All");
@@ -15,7 +20,7 @@ const Doctors = () => {
       experience: 12,
       description:
         "Expert in heart-related diseases and cardiac surgery with over a decade of successful treatments.",
-      img: "https://via.placeholder.com/150",
+      img: ramesh,
     },
     {
       id: 2,
@@ -24,7 +29,7 @@ const Doctors = () => {
       experience: 8,
       description:
         "Specialized in skin, hair, and nail disorders with modern dermatological practices.",
-      img: "https://via.placeholder.com/150",
+      img: anjali,
     },
     {
       id: 3,
@@ -33,7 +38,7 @@ const Doctors = () => {
       experience: 15,
       description:
         "Renowned neurologist with extensive experience in treating brain and nervous system disorders.",
-      img: "https://via.placeholder.com/150",
+      img: rajesh,
     },
     {
       id: 4,
@@ -42,7 +47,7 @@ const Doctors = () => {
       experience: 10,
       description:
         "Providing compassionate care and specialized treatment in women’s health and maternity.",
-      img: "https://via.placeholder.com/150",
+      img: priya,
     },
     {
       id: 5,
@@ -51,7 +56,7 @@ const Doctors = () => {
       experience: 9,
       description:
         "Experienced orthopedic surgeon focusing on joint replacements and sports injuries.",
-      img: "https://via.placeholder.com/150",
+      img: sanjay,
     },
   ];
 
