@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import Header from "./Header";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Footer from "./Footer";
 // import doctors_abt from "src/assets/doctors_abt"; // <-- place your about us image inside src/assets/
 import doctors_abt from "../assets/doctors_abt.jpg"
@@ -12,7 +12,7 @@ function AboutUs() {
 
     <div className="about-page">
         <Header />
-        <Navbar />
+        {/* <Navbar /> */}
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-content">

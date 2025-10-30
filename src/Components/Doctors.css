@@ -23,6 +23,7 @@
   margin-bottom: 40px;
   gap: 10px;
   font-size: 16px;
+  color: #0a828d;
 }
 
 .filter-section select {
@@ -32,6 +33,8 @@
   font-size: 15px;
   color: #0a828d;
   cursor: pointer;
+  background-color: #f8fdfe;
+  ;
 }
 
 /* Doctor grid - fills full width */

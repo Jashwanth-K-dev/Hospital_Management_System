@@ -11,7 +11,7 @@ export class Home extends Component {
       <div className='main'>
       <Header />
     {/* <div style={{ height: '90px' }}></div>  */}
-    <Navbar/>
+    {/* <Navbar/> */}
     <HeroSection/>
     <InfoCards/>
     <Footer/>

@@ -63,7 +63,7 @@ const Doctors = () => {
   return (
     <div className="doctors-page">
       <Header />
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="doctors-main">
         <h2 className="doctors-heading">Our Expert Doctors</h2>

@@ -1,120 +1,100 @@
-/* Reset and body setup */
-body, html {
+/* Reset any unwanted overflow or spacing */
+body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  background-color: white;
-  font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-/* Full width top header */
-.header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #0aa1ae;
-  color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
 }
 
 /* Header container */
-.header-inner {
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Navbar styling */
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 50px;
-  box-sizing: border-box;
-  width: 100%;
+  padding: 1rem 4rem;
+  background: linear-gradient(to bottom, #0aa1ae, #16c2b8, #e0f7f9);
+  color: white;
+  transition: background 0.6s ease, box-shadow 0.4s ease;
 }
 
-/* Logo section */
+/* When scrolled down */
+.navbar.scrolled {
+  background: #0aa1ae;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo area */
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.logo-icon {
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 0.6rem;
 }
 
 .logo-text {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: white;
 }
 
 .highlight {
-  color: #ff6666;
+  color: #ef4444;
 }
 
-/* Right section (time, contact, button) */
-.right-section {
+/* Navigation links */
+.navbar-links {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 2rem;
+  margin: 0;
 }
 
-/* Contact/time info */
-.info-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.info-icon {
-  font-size: 20px;
-}
-
-.info-title {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.info-detail {
-  font-size: 12px;
-  color: #e0e0e0;
-}
-
-/* Button styling */
-.book-btn {
-  background-color: #ff4d4d;
-  border: none;
-  color: white;
-  padding: 8px 18px;
-  font-weight: 600;
-  border-radius: 4px;
+.navbar-links li {
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.book-btn:hover {
-  background-color: #e53935;
+.navbar-links li:hover {
+  color: #ffe4e6;
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 12px;
-    padding: 15px;
-  }
+/* Buttons */
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
 
-  .right-section {
-    flex-direction: column;
-    gap: 10px;
-  }
+.nav-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  .info-item {
-    justify-content: center;
-  }
+.login-btn {
+  background: white;
+  color: #0aa1ae;
+}
+
+.signup-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #e0f2f1;
+}
+
+.signup-btn:hover {
+  background: #dc2626;
 }

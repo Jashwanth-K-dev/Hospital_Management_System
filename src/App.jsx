@@ -6,6 +6,7 @@ import ForgetPassword from "./Components/ForgetPassword"; // Import this
 import Home from "./Components/Home";
 import Doctors from "./Components/Doctors";
 import AboutUs from "./Components/AboutUs";
+import ContactUs from "./Components/ContactUs";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/signup" element={<PatientSignup />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+
 
         <Route path="/forget-password" element={<ForgetPassword />} />
       </Routes>

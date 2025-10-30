@@ -5,6 +5,8 @@
   background-color: #f8fdfe;
   text-align: center;
   font-family: 'Segoe UI', Arial, sans-serif;
+  padding-top: 0px;
+  margin-top: -25px;
 }
 
 .info-heading {
