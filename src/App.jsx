@@ -4,6 +4,8 @@ import PatientSignup from "./Components/PatientSignup";
 import LoginPage from "./Components/LoginPage";
 import ForgetPassword from "./Components/ForgetPassword"; // Import this
 import Home from "./Components/Home";
+import Doctors from "./Components/Doctors";
+import AboutUs from "./Components/AboutUs";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<PatientSignup />} />
+        <Route path="/doctors" element={<Doctors />} />
+        <Route path="/about" element={<AboutUs />} />
+
         <Route path="/forget-password" element={<ForgetPassword />} />
       </Routes>
     </Router>
